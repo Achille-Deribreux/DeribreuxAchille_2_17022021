@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <!--DEBUT HEAD-->
+    <head>
+        <title>Reservia</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    </head>
+    <!--FIN HEAD-->
+
+    <!--DEBUT BODY-->
+    <body>
+        <!--DEBUT HEADER (logo, nav)-->
+        <header>
+            <span class="logo">
+                <img src="/images/logo/Reservia.svg" alt="Logo Reservia"/> 
+            </span>
+            <div  class="navigation">
+                <nav>
+                    <a href="#">Hébergements</a>
+                    <a href="#">Activités</a>
+                </nav>
+                <div class="navigation_inscription">
+                        <a href="#">S'inscrire</a>
+                </div>
+            </div>
+        </header>
+        <!--FIN HEADER (logo, nav)-->
+
+        <!--DEBUT MAIN-->
+        <main>
+            <!--DEBUT SECTION RECHERCHE-->
+            <section>
+                <!--DEBUT PREMIERE DIVISION (titre et champ de recherche)-->
+                <div>
+                    <div class="title">
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <!--DEBUT FORMULAIRE DE RECHERCHE-->
+                    <form>
+                        <span class="map_search_icon">
+                            <i class="fas fa-map-marker-alt "></i>
+                        </span>
+                        <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
+                        <button id="search_submit_button">
+                            <p>Rechercher</p>                       
+                        </button>
+                    </form>
+                    <!--FIN FORMULAIRE DE RECHERCHE-->
+                </div>
+                <!--FIN PREMIERE DIVISION (titre et champ de recherche)-->
+
+                <!---DEBUT DEUXIEME DIVISION (filtres)-->
+                <div class="filtres_conatiner">
+                    <p class="filtre_annonce">Filtres</p>
+                    <div class="filtre">
+                        <span class="filtre_icon_background">
+                            <i class="fas fa-money-bill-wave-alt filtre_icon"></i>
+                        </span>
+                        <p>Économique</p>
+                    </div>
+                    <div class="filtre">
+                        <span class="filtre_icon_background">
+                            <i class="fas fa-child search_filter_ICON filtre_icon"></i>
+                            </span>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filtre">
+                        <span class="filtre_icon_background">
+                            <i class="fas fa-heart search_filter_ICON filtre_icon"></i>
+                            </span>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filtre">
+                        <span class="filtre_icon_background">
+                            <i class="fas fa-dog search_filter_ICON filtre_icon"></i>
+                        </span>    
+                        <p>Animaux autorisés</p>
+                    </div>
+                </div>
+                <!---FIN DEUXIEME DIVISION (filtres)-->
+
+                <!--DEBUT TROISIEME DIVISION (i, resutat de recherche)-->
+                <div class="search_result">
+                    <span class="search_result_icon_background">
+                        <i class="fas fa-info search_result_icon"></i>
+                    </span>
+                    <p>Plus de 500 hébergements sont disponibles dans cette ville</p>
+                </div>
+                <!--FIN TROISIEME DIVISION (i, resutat de recherche)-->
+            </section>
+            <!--FIN SECTION RECHERCHE-->
+        </main>
+        <!--FIN MAIN-->
+
+    </body>
+    <!--FIN BODY-->
+</html>
