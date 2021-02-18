@@ -14,19 +14,13 @@
     <!--DEBUT BODY-->
     <body>
         <!--DEBUT HEADER (logo, nav)-->
-        <header>
-            <span class="logo">
-                <img src="/images/logo/Reservia.svg" alt="Logo Reservia"/> 
-            </span>
-            <div  class="navigation">
-                <nav>
-                    <a href="#">Hébergements</a>
-                    <a href="#">Activités</a>
-                </nav>
-                <div class="navigation_inscription">
-                        <a href="#">S'inscrire</a>
-                </div>
-            </div>
+        <header class="header">
+            <img class="header_logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
+            <nav class="header_nav">
+                <a class="header_nav_link" href="#" >Hébergement</a>
+                <a class="header_nav_link" href="#" >Activités</a>
+            </nav>
+            <a class="header_inscription" href="#" >S'inscrire</a>
         </header>
         <!--FIN HEADER (logo, nav)-->
 
@@ -41,15 +35,18 @@
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <!--DEBUT FORMULAIRE DE RECHERCHE-->
-                    <form>
-                        <span class="map_search_icon">
-                            <i class="fas fa-map-marker-alt "></i>
-                        </span>
-                        <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
-                        <button id="search_submit_button">
-                            <p>Rechercher</p>                       
-                        </button>
-                    </form>
+                    <div class="formulaire">
+                        <form>
+                            <span class="map_search_icon">
+                                <i class="fas fa-map-marker-alt "></i>
+                            </span>
+                            <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
+                            <button id="search_submit_button">
+                                <p class="search_button_text">Rechercher</p>             
+                                <i class="fas fa-search search_button_icon"></i>          
+                            </button>
+                        </form>
+                    </div>
                     <!--FIN FORMULAIRE DE RECHERCHE-->
                 </div>
                 <!--FIN PREMIERE DIVISION (titre et champ de recherche)-->
