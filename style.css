@@ -10,7 +10,7 @@ header a
     color : black;
     font-size:1rem;
 }
-header a : :visited
+header a:visited
 {
     text-decoration: none;
     color : black;
@@ -20,7 +20,11 @@ header span a
     color : #0065FC;
     padding-left : 7px;
 }
-
+header a
+    {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 @media screen and (min-width:601px)
 {
     header
@@ -31,15 +35,9 @@ header span a
         margin-left: 1%;
         margin-right: 1%;
     }
-
     .navigation
     {
         display: flex;
-    }
-    header a
-    {
-        padding-left: 4px;
-        padding-right: 4px;
     }
     header a:hover
     {
@@ -55,31 +53,33 @@ header span a
     {
         display: flex;
     }
-
-    .logo 
-    {
-        width: 50%;
-        background-color: #0065FC;
-    }
     .navigation
     {
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
-    }
-
-    header a
-    {
-        padding-left: 4px;
-        padding-right: 4px;
+        width: 100%;
     }
     .navigation_inscription
     {
         width: 50%;
-        background-color: aqua;
-        
+        order:1;
+        margin-top: 1rem;
+        text-align: right;
+
+    }
+    nav
+    {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        order: 2;
+    }
+    .logo 
+    {
+        position: absolute;
     }
     
 }
