@@ -8,25 +8,20 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!--FIN HEAD-->
 
     <!--DEBUT BODY-->
     <body>
         <!--DEBUT HEADER (logo, nav)-->
-        <header>
-            <span class="logo">
-                <img src="/images/logo/Reservia.svg" alt="Logo Reservia"/> 
-            </span>
-            <div  class="navigation">
-                <nav>
-                    <a href="#">Hébergements</a>
-                    <a href="#">Activités</a>
-                </nav>
-                <div class="navigation_inscription">
-                        <a href="#">S'inscrire</a>
-                </div>
-            </div>
+        <header class="header">
+            <img class="header_logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
+            <nav class="header_nav">
+                <a class="header_nav_link" href="#" >Hébergement</a>
+                <a class="header_nav_link" href="#" >Activités</a>
+            </nav>
+            <a class="header_inscription" href="#" >S'inscrire</a>
         </header>
         <!--FIN HEADER (logo, nav)-->
 
@@ -41,22 +36,26 @@
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <!--DEBUT FORMULAIRE DE RECHERCHE-->
-                    <form>
-                        <span class="map_search_icon">
-                            <i class="fas fa-map-marker-alt "></i>
-                        </span>
-                        <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
-                        <button id="search_submit_button">
-                            <p>Rechercher</p>                       
-                        </button>
-                    </form>
+                    <div class="formulaire">
+                        <form>
+                            <span class="map_search_icon">
+                                <i class="fas fa-map-marker-alt "></i>
+                            </span>
+                            <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
+                            <button id="search_submit_button">
+                                <p class="search_button_text">Rechercher</p>             
+                                <i class="fas fa-search search_button_icon"></i>          
+                            </button>
+                        </form>
+                    </div>
                     <!--FIN FORMULAIRE DE RECHERCHE-->
                 </div>
                 <!--FIN PREMIERE DIVISION (titre et champ de recherche)-->
 
                 <!---DEBUT DEUXIEME DIVISION (filtres)-->
-                <div class="filtres_conatiner">
+                <div class="filtres_container">
                     <p class="filtre_annonce">Filtres</p>
+
                     <div class="filtre">
                         <span class="filtre_icon_background">
                             <i class="fas fa-money-bill-wave-alt filtre_icon"></i>
