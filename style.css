@@ -1,7 +1,10 @@
 body
 {
-    margin: 1rem;
+    padding:0 1rem;
+    margin: 1rem auto;
     font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    
 }
 /*** DEBUT STYLE HEADER ***/
 .header
@@ -201,10 +204,24 @@ form span
 }
 @media screen and (min-width:601px)
 {
-    .filtres_conatiner
+    .filtres_container
     {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width : 600px)
+{
+    .filtres_container
+    {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .filtre_annonce
+    {
+        width: 100%;
     }
 }
 /*** FIN STYLE FILTRES ***/
