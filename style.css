@@ -268,7 +268,6 @@ form span
 }
 .hebergements_marseille_container article
 {
-    width: 30%;
     padding: 0.375rem;
 }
 .hebergements_marseille_container figure img
@@ -350,18 +349,23 @@ aside article a
         display: flex;
         flex-direction: column;
     }
-    .hebergements_marseille_firstline, .hebergements_marseille_secondline
+    .hebergements_marseille_firstline
     {
-        display: inline-flex;
+        display:flex;
         flex-wrap: wrap;
     }
-   
+    .hebergements_marseille_firstline article
+    {
+        width: 90%;
+        margin:auto;
+        margin-bottom: 1rem;
+    }
 
     /*** TEMPORAIRE***/
     .hebergements_marseille_container figure img
     {
         width: 100%;
-        height : 7rem;
+        height : 12rem;
     }
     .hebergements_populaires_container img
     {
@@ -370,18 +374,39 @@ aside article a
     }
     /*** FIN TEMPORAIRE***/
 }
-@media screen and (min-width : 950px)
+@media screen and (min-width : 680px)
 {
     
-    .hebergements_marseille_firstline, .hebergements_marseille_secondline
+    .hebergements_marseille_firstline
     {
-        display: flex; 
-        justify-content: space-between;
+        display: flex;
+        align-items: ; 
         margin-top: 1rem;
         margin-bottom: 1rem;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     
+}
+@media screen and (min-width:680px) and (max-width : 1200px)
+{
+    
+    .hebergements_marseille_container article 
+    {
+        min-width: 45%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .hebergements_marseille_container article
+    {
+    width: 30%;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1349px)
+{
+    .hebergements_marseille_container article
+    {
+        width: 30%;
+    }
 }
 @media screen and (min-width : 950px) and (max-width : 1349px)
 {
@@ -393,7 +418,7 @@ aside article a
     .hebergements_marseille_container figure img
     {
         width: 100%;
-        height : 7rem;
+        height : 12rem;
     }
     .hebergements_section
     {
@@ -450,7 +475,7 @@ aside article a
     }
         aside
     {
-        width: 30%;
+        min-width: 30%;
     }   
     /* positionnement */
     .hebergements_section
