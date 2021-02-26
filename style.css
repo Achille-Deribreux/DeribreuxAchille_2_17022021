@@ -497,3 +497,164 @@ aside article a
     }
 }
 /*** FIN STYLE HEBERGEMENTS***/
+
+/**** DEBUT STYLE ACTIVITES ***/
+.activites_marseille_section a
+{
+    border-radius: 1.27rem;
+    box-shadow: 0 0 16px #0000002e;
+    overflow: hidden;
+}
+.activites_marseille_section a  img
+{
+    object-fit: cover;
+    width: 100%;
+}
+.activites_marseille_div
+{
+    display: grid;
+    grid-row-gap: 1rem;
+    width: 100%;
+    max-width: 1440px;
+}
+@media screen and (min-width:1200px)
+{
+    .activites_marseille_div
+    {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 3%;
+        grid-template-areas:"port fort calanques notredame" "port iles calanques parc";
+    }
+    /*Img sizes*/
+    .vieux-port img, .parc-national-des-calanques img 
+    {
+        height: 34rem;
+    }
+    .fort-de-pomegues img,.iles-du-frioul img,.notre-dame-de-la-garde img,.parc-longchamp img
+    {
+        height: 15rem;
+    }
+}
+@media screen and (max-width:679px)
+{
+    .activites_marseille_div
+    {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6,auto);
+        grid-column-gap: 3%;
+        grid-template-areas:"port" "fort" "iles" "calanques" "notredame" "parc";
+    }
+    /*Img sizes*/
+    .activites_marseille_div img
+    {
+        height: 15rem;
+    }
+}
+@media screen and (min-width:680px) and (max-width:949px)
+{
+    .activites_marseille_div
+    {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 3%;
+        grid-template-areas:"port fort" "iles calanques" "notredame parc";
+    }
+    /*Img sizes*/
+    .activites_marseille_div img
+    {
+        height: 15rem;
+    }
+}
+@media screen and (min-width:950px) and (max-width:1199px)
+{
+    .activites_marseille_div
+    {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 3%;
+        grid-template-areas:"port fort iles" "calanques notredame parc";
+    }
+    /*Img sizes*/
+    .activites_marseille_div img
+    {
+        height: 15rem;
+    }
+}
+/*Ajustement*/
+.activites_marseille_section a h3
+{
+    margin: 0.5rem 1.5rem 2rem 1.5rem;
+    display: block;
+}
+.activites_marseille_section figure
+{
+    margin : 0;
+}
+.activites_marseille_section figure figcaption
+{
+    height: 3rem;
+}
+/*Links style*/
+.activites_marseille_section a,.activites_marseille_section:visited
+{
+    text-decoration: none;
+    color: black;
+}
+/*Grid positions*/
+.vieux-port
+{
+    grid-area: port;
+}
+.fort-de-pomegues
+{
+    grid-area: fort;
+}
+.iles-du-frioul
+{
+    grid-area: iles;
+}
+.parc-national-des-calanques
+{
+    grid-area: calanques;
+}
+.notre-dame-de-la-garde
+{
+    grid-area: notredame;
+}
+.parc-longchamp
+{
+    grid-area: parc;
+}
+/*** FOOTER ***/ 
+footer
+{
+    margin-top: 4rem;
+}
+.footer_container
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer_sub_container
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-lien
+{
+    padding-bottom: 4%;
+}
+footer a, footer a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (max-width:750px)
+{
+    .footer_container
+    {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+}
