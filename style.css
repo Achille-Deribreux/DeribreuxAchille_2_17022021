@@ -8,7 +8,7 @@ main
 {
     margin : 1rem;
 }
-/*** DEBUT STYLE HEADER ***/
+/*** ---------------------DEBUT STYLE HEADER--------------------- ***/
 .header
 {
     display: grid;
@@ -50,7 +50,7 @@ main
     text-decoration: none;
     font-weight: 500;
 }
-
+/*----------media queries----------*/
 @media screen and (min-width:601px)
 {
     .header
@@ -58,7 +58,7 @@ main
         grid-template-columns: auto 1fr auto auto;
         grid-template-areas: "logo . nav inscription";
     }
-    .header_nav_link:first-child /* Data-active ?*/
+    .header_nav_link[data-active="true"]
    {
        border-top: 2px #0065FC solid;
    } 
@@ -82,14 +82,15 @@ main
         margin-top: 1rem
     }
 }
-/*** FIN STYLE HEADER ***/
+/*** ---------------------FIN STYLE HEADER--------------------- ***/
 
-/*** DEBUT STYLE TITRE ***/
+/*** ---------------------DEBUT STYLE TITRE--------------------- ***/
 .title h2
 {
     font-size: 2em;
     font-weight: 700;
 }
+/*----------media queries----------*/
 @media screen and (max-width:600px)
 {
     .title
@@ -97,9 +98,9 @@ main
         text-align: center;
     }
 }
-/*** FIN STYLE TITRE ***/
+/*** ---------------------FIN STYLE TITRE--------------------- ***/
 
-/*** DEBUT STYLE CHAMP RECHERCHE ***/
+/*** ---------------------DEBUT STYLE CHAMP RECHERCHE--------------------- ***/
     /* ICONE */
 form span
 {
@@ -130,7 +131,9 @@ form span
     font-size: 1em;
     border: none;
     padding : 0 1rem;
+    cursor: pointer;
 }
+/*----------media queries----------*/
 @media screen and (max-width:600px)
 {
     .formulaire form
@@ -168,9 +171,9 @@ form span
     }
 }
 
-/*** FIN STYLE CHAMP RECHERCHE ***/
+/*** ---------------------FIN STYLE CHAMP RECHERCHE--------------------- ***/
 
-/*** DEBUT STYLE FILTRES ***/
+/*** ---------------------DEBUT STYLE FILTRES--------------------- ***/
 .filtre_annonce
 {
     font-weight: bold;
@@ -183,6 +186,11 @@ form span
     border-radius: 2rem;
     margin: 1rem;
     padding-right: 10px;
+    cursor: pointer;
+}
+.filtre:hover
+{
+    transform: scale(1.01)
 }
 .filtre p
 {
@@ -204,6 +212,7 @@ form span
 {
     color: #0065FC;
 }
+/*----------media queries----------*/
 @media screen and (min-width:601px)
 {
     .filtres_container
@@ -226,9 +235,9 @@ form span
         width: 100%;
     }
 }
-/*** FIN STYLE FILTRES ***/
+/*** ---------------------FIN STYLE FILTRES--------------------- ***/
 
-/*** DEBUT STYLE RESULTAT DE RECHERCHE ***/
+/*** ---------------------DEBUT STYLE RESULTAT DE RECHERCHE--------------------- ***/
 .search_result
 {
     display: flex;
@@ -250,11 +259,10 @@ form span
     color: #0065FC;
 }
 
-/*** FIN STYLE RESULTAT DE RECHERCHE ***/
+/*** ---------------------FIN STYLE RESULTAT DE RECHERCHE--------------------- ***/
 
-/*** DEBUT STYLE HEBERGEMENTS ***/
+/*** ---------------------DEBUT STYLE HEBERGEMENTS--------------------- ***/
 
-/***-------------_ALL_-----------***/
 /* Style*/
 .hebergements_section article
 {
@@ -266,6 +274,33 @@ form span
     cursor: pointer;
     margin-bottom: 1.5rem;
 }
+.hebergements_populaires_etoiles, .hebergements_marseille_etoiles 
+    {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+.hebergements_populaires_etoiles[data-active=true], .hebergements_marseille_etoiles[data-active=true]
+{
+    color: #0065FC;
+}
+.hebergements_populaires_etoiles[data-active=false], .hebergements_marseille_etoiles[data-active=false]
+{
+    color: #F2F2F2;
+}
+.hebergements_populaires_aside_title_div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+    height: 7rem;
+}
+article:hover
+{
+    transform: scale(1.01)
+}
+/*Ajustements*/
 .hebergements_marseille_container article
 {
     padding: 0.375rem;
@@ -281,24 +316,9 @@ form span
     object-fit: cover;
     border-radius : 1.5rem;
 }
-.hebergements_populaires_etoiles, .hebergements_marseille_etoiles 
-    {
-        display: flex;
-        flex-wrap: nowrap;
-        color: #0065FC;
-    }
-/* ajustements*/
 .hebergements_marseille_secondline article,.hebergements_marseille_firstline article
 {
     margin-right : 1.5rem;
-}
-.hebergements_populaires_aside_title_div
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 1rem;
-    height: 7rem;
 }
 .hebergements_populaires_aside_title_div h3, article p, figcaption h3,.hebergements_marseille_container figure
 {
@@ -313,6 +333,10 @@ form span
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
 }
+aside article 
+{
+    margin-right: 1em;
+}
 
 /* Links style*/
 .hebergements_section a,.hebergements_section:visited
@@ -320,10 +344,7 @@ form span
     text-decoration: none;
     color: black;
 }
-aside article 
-{
-    margin-right: 1em;
-}
+/*Positionnement*/
 .hebergements_populaires_title
     {
         display: flex;
@@ -336,9 +357,11 @@ aside article a
     align-items: flex-start;
     justify-content: flex-start;
 }
-/***-------------_FIN_ALL--------***/
+
+/*----------media queries----------*/
 @media screen and (max-width:949px)
 {
+    /*Positionnement*/
     .hebergements_section
     {
         display: flex;
@@ -354,14 +377,13 @@ aside article a
         display:flex;
         flex-wrap: wrap;
     }
+    /*Dimensions*/
     .hebergements_marseille_firstline article
     {
         width: 90%;
         margin:auto;
         margin-bottom: 1rem;
     }
-
-    /*** TEMPORAIRE***/
     .hebergements_marseille_container figure img
     {
         width: 100%;
@@ -372,7 +394,6 @@ aside article a
         width: 8rem;
         height: 8rem;
     }
-    /*** FIN TEMPORAIRE***/
 }
 @media screen and (min-width : 680px)
 {
@@ -410,16 +431,7 @@ aside article a
 }
 @media screen and (min-width : 950px) and (max-width : 1349px)
 {
-    .hebergements_marseille_etoiles 
-    {
-        padding-bottom: 1rem;
-        padding-top: 0.3rem;
-    }
-    .hebergements_marseille_container figure img
-    {
-        width: 100%;
-        height : 12rem;
-    }
+    /*Positionnement*/
     .hebergements_section
     {
         display: flex;
@@ -436,6 +448,24 @@ aside article a
         display: flex;
         justify-content: space-around;
     }
+    .hebergements_populaires_title
+    {
+        display: flex;
+        justify-content: space-between;
+        padding-right : 2rem;
+    }
+    /*Dimensions & ajustements*/
+    .hebergements_marseille_etoiles 
+    {
+        padding-bottom: 1rem;
+        padding-top: 0.3rem;
+    }
+    .hebergements_marseille_container figure img
+    {
+        width: 100%;
+        height : 12rem;
+    }
+    
     .hebergements_populaires_container img
     {
         width: 8rem;
@@ -445,15 +475,29 @@ aside article a
     {
         width:30%;
     }
-    .hebergements_populaires_title
-    {
-        display: flex;
-        justify-content: space-between;
-        padding-right : 2rem;
-    }
+    
 }
 @media screen and (min-width:1350px)
 {
+    /* positionnement */
+    .hebergements_section
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .hebergements_populaires_container
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .hebergements_marseille_container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Dimensions*/
     .hebergements_marseille_container figure img
     {
         width: 100%;
@@ -477,38 +521,43 @@ aside article a
     {
         min-width: 30%;
     }   
-    /* positionnement */
-    .hebergements_section
-    {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-    }
-    .hebergements_populaires_container
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .hebergements_marseille_container
-    {
-        display: flex;
-        flex-direction: column;
-    }
+    
 }
-/*** FIN STYLE HEBERGEMENTS***/
+/*** ---------------------FIN STYLE HEBERGEMENTS--------------------***/
 
-/**** DEBUT STYLE ACTIVITES ***/
-.activites_marseille_section a
+
+/**** ---------------------DEBUT STYLE ACTIVITES---------------------***/
+
+/*Grid positions*/
+.vieux-port
 {
-    border-radius: 1.27rem;
-    box-shadow: 0 0 16px #0000002e;
-    overflow: hidden;
+    grid-area: port;
 }
-.activites_marseille_section a  img
+.fort-de-pomegues
 {
-    object-fit: cover;
-    width: 100%;
+    grid-area: fort;
+}
+.iles-du-frioul
+{
+    grid-area: iles;
+}
+.parc-national-des-calanques
+{
+    grid-area: calanques;
+}
+.notre-dame-de-la-garde
+{
+    grid-area: notredame;
+}
+.parc-longchamp
+{
+    grid-area: parc;
+}
+/*Links style*/
+.activites_marseille_section a,.activites_marseille_section:visited
+{
+    text-decoration: none;
+    color: black;
 }
 .activites_marseille_div
 {
@@ -517,6 +566,36 @@ aside article a
     width: 100%;
     max-width: 1440px;
 }
+.activites_marseille_section a:hover
+{
+    transform:scale(1.01);
+}
+/*Ajustement*/
+.activites_marseille_section a
+{
+    border-radius: 1.27rem;
+    box-shadow: 0 0 16px #0000002e;
+    overflow: hidden;
+}
+.activites_marseille_section a h3
+{
+    margin: 0.5rem 1.5rem 2rem 1.5rem;
+    display: block;
+}
+.activites_marseille_section a  img
+{
+    object-fit: cover;
+    width: 100%;
+}
+.activites_marseille_section figure
+{
+    margin : 0;
+}
+.activites_marseille_section figure figcaption
+{
+    height: 3rem;
+}
+/*----------media queries----------*/
 @media screen and (min-width:1200px)
 {
     .activites_marseille_div
@@ -581,52 +660,8 @@ aside article a
         height: 15rem;
     }
 }
-/*Ajustement*/
-.activites_marseille_section a h3
-{
-    margin: 0.5rem 1.5rem 2rem 1.5rem;
-    display: block;
-}
-.activites_marseille_section figure
-{
-    margin : 0;
-}
-.activites_marseille_section figure figcaption
-{
-    height: 3rem;
-}
-/*Links style*/
-.activites_marseille_section a,.activites_marseille_section:visited
-{
-    text-decoration: none;
-    color: black;
-}
-/*Grid positions*/
-.vieux-port
-{
-    grid-area: port;
-}
-.fort-de-pomegues
-{
-    grid-area: fort;
-}
-.iles-du-frioul
-{
-    grid-area: iles;
-}
-.parc-national-des-calanques
-{
-    grid-area: calanques;
-}
-.notre-dame-de-la-garde
-{
-    grid-area: notredame;
-}
-.parc-longchamp
-{
-    grid-area: parc;
-}
-/*** FOOTER ***/ 
+
+/*** ---------------------FOOTER--------------------- ***/ 
 footer
 {
     margin-top: 4rem;
@@ -650,6 +685,7 @@ footer a, footer a:visited
     color: black;
     text-decoration: none;
 }
+/*----------media queries----------*/
 @media screen and (max-width:750px)
 {
     .footer_container
