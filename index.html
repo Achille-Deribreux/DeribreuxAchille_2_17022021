@@ -16,12 +16,12 @@
     <body>
         <!--DEBUT HEADER (logo, nav)-->
         <header class="header">
-            <img class="header_logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
-            <nav class="header_nav">
-                <a class="header_nav_link" href="#" >Hébergement</a>
-                <a class="header_nav_link" href="#" >Activités</a>
+            <img class="header-logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
+            <nav class="header-nav">
+                <a class="header-nav-link" href="#hebergements" data-active="true">Hébergement</a>
+                <a class="header-nav-link" href="#activites" data-active="false">Activités</a>
             </nav>
-            <a class="header_inscription" href="#" >S'inscrire</a>
+            <a class="header-inscription" href="#" >S'inscrire</a>
         </header>
         <!--FIN HEADER (logo, nav)-->
 
@@ -32,19 +32,19 @@
                 <!--DEBUT PREMIERE DIVISION (titre et champ de recherche)-->
                 <div>
                     <div class="title">
-                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <!--DEBUT FORMULAIRE DE RECHERCHE-->
                     <div class="formulaire">
                         <form>
-                            <span class="map_search_icon">
+                            <span class="map-search_icon">
                                 <i class="fas fa-map-marker-alt "></i>
                             </span>
-                            <input type="text" name="DesintationRecherchee" class="search_input" placeholder="Marseille, France"/>
-                            <button id="search_submit_button">
-                                <p class="search_button_text">Rechercher</p>             
-                                <i class="fas fa-search search_button_icon"></i>          
+                            <input type="text" name="DesintationRecherchee" class="search-input" placeholder="Marseille, France"/>
+                            <button id="search-submit-button">
+                                <p class="search-button-text">Rechercher</p>             
+                                <i class="fas fa-search search-button-icon"></i>          
                             </button>
                         </form>
                     </div>
@@ -53,30 +53,30 @@
                 <!--FIN PREMIERE DIVISION (titre et champ de recherche)-->
 
                 <!---DEBUT DEUXIEME DIVISION (filtres)-->
-                <div class="filtres_container">
-                    <p class="filtre_annonce">Filtres</p>
+                <div class="filtres-container">
+                    <p class="filtre-annonce">Filtres</p>
 
                     <div class="filtre">
-                        <span class="filtre_icon_background">
+                        <span class="filtre-icon-background">
                             <i class="fas fa-money-bill-wave-alt filtre_icon"></i>
                         </span>
                         <p>Économique</p>
                     </div>
                     <div class="filtre">
-                        <span class="filtre_icon_background">
-                            <i class="fas fa-child search_filter_ICON filtre_icon"></i>
+                        <span class="filtre-icon-background">
+                            <i class="fas fa-child search-filter-ICON filtre-icon"></i>
                             </span>
                         <p>Familial</p>
                     </div>
                     <div class="filtre">
-                        <span class="filtre_icon_background">
-                            <i class="fas fa-heart search_filter_ICON filtre_icon"></i>
+                        <span class="filtre-icon-background">
+                            <i class="fas fa-heart search-filter-ICON filtre-icon"></i>
                             </span>
                         <p>Romantique</p>
                     </div>
                     <div class="filtre">
-                        <span class="filtre_icon_background">
-                            <i class="fas fa-dog search_filter_ICON filtre_icon"></i>
+                        <span class="filtre-icon-background">
+                            <i class="fas fa-dog search-filter-ICON filtre-icon"></i>
                         </span>    
                         <p>Animaux autorisés</p>
                     </div>
@@ -84,18 +84,296 @@
                 <!---FIN DEUXIEME DIVISION (filtres)-->
 
                 <!--DEBUT TROISIEME DIVISION (i, resutat de recherche)-->
-                <div class="search_result">
-                    <span class="search_result_icon_background">
-                        <i class="fas fa-info search_result_icon"></i>
+                <div class="search-result">
+                    <span class="search-result-icon-background">
+                        <i class="fas fa-info search-result-icon"></i>
                     </span>
                     <p>Plus de 500 hébergements sont disponibles dans cette ville</p>
                 </div>
                 <!--FIN TROISIEME DIVISION (i, resutat de recherche)-->
             </section>
             <!--FIN SECTION RECHERCHE-->
+
+            <!--DEBUT SECTION HEBERGEMENTS-->
+            <section class="hebergements-section" id="hebergements">
+                <div class="hebergements-marseille-container">
+                    <h2 class="hebergements-marseille-title">Hébergements à Marseille</h2>
+                    <div class="hebergements-marseille-firstline">
+                        <article class="hebergements-marseille_auberge-cannebiere">
+                            <a href="#">
+                                <figure class="hebergements-marseille-auberge-cannebiere-figure">
+                                    <img src="images/hebergements/4_small/auberge_de_la_cannebiere.jpg" alt="chambre d'auberge avec vue sur la ville"/>
+                                    <figcaption>
+                                        <h3>Auberge la Cannebière</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 25€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="hebergements-marseille-hotel-du-port">
+                            <a href="#">
+                                <figure class="hebergements-marseille-hotel-du-port-figure">
+                                    <img src="images/hebergements/4_small/hotel-du_port.jpg" alt="chambre d'hôtel blanche au port"/>
+                                    <figcaption>
+                                        <h3>Hôtel du Port</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 52€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="hebergements-marseille-hotel-les-mouettes">
+                            <a href="#">
+                                <figure class="hebergements-marseille-hotel-les-mouettes-figure">
+                                    <img src="images/hebergements/4_small/hotel_les_mouettes.jpg" alt="chambre d'hôtel avec miroir"/>
+                                    <figcaption>
+                                        <h3>Hôtel Les Mouettes</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 75€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                </div>
+                            </a>
+                        </article>
+                    
+                        <article class="hebergements-marseille-hotel-de-la-mer">
+                            <a href="#">
+                                <figure class="hebergements-marseille-hotel-de-la-mer-figure">
+                                    <img src="images/hebergements/4_small/hotel_de_la_mer.jpg"alt="chambre d'hôtel avec décoration sur le theme de la mer"/>
+                                    <figcaption>
+                                        <h3>Hôtel de la Mer</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 46€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="hebergements-marseille-auberge-le-panier">
+                            <a href="#">
+                                <figure class="hebergements-marseille-auberge-le-panier-figure">
+                                    <img src="images/hebergements/4_small/auberge_le_panier.jpg"alt="chambre d'auberge avec lits superposés"/>
+                                    <figcaption>
+                                        <h3>Auberge le Panier</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 23€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="hebergements-marseille-hotel-chez-amina">
+                            <a href="#">
+                                <figure class="hebergements-marseille-hotel-chez-amina-figure">
+                                    <img src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="chambre d'hôtel classique de couleur blanche"/>
+                                    <figcaption>
+                                        <h3>Hôtel chez Amina</h3>
+                                    </figcaption>
+                                </figure>
+                                <p>Nuit à partir de 96€</p>
+                                <div class="hebergements-marseille-etoiles">
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <a href="#">Afficher plus</a>
+                </div>
+
+                <aside class="hebergements-populaires-container">
+                    <div class="hebergements-populaires-title">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <div class="hebergements-populaires-article-container">
+                        <article>
+                            <a href="#">
+                                <div class="populaires-img-div-container">
+                                    <img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt="chambre d'hôtel verte"/>
+                                </div>
+                                <div class="hebergements_populaires_aside_title_div">
+                                    <h3>Hôtel Soleil du Matin</h3>
+                                    <p>Nuit à partir de 128€</p>
+                                    <div class="hebergements-marseille-etoiles">
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="#">
+                                <div class="populaires-img-div-container">
+                                    <img src="images/hebergements/4_small/au_coeur_de_leau.jpg" alt="chambre d'hôtel élégante"/>
+                                </div>
+                                <div class="hebergements-populaires-aside-title-div">
+                                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit à partir de 71€</p>
+                                    <div class="hebergements-marseille-etoiles">
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="#">
+                                <div class="populaires-img-div-container">
+                                    <img src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="chambre d'hôtel classique avec lit double"/>
+                                </div>
+                                <div class="hebergements-populaires-aside-title-div">
+                                    <h3>Hôtel Tout Bleu et Blanc</h3>
+                                    <p>Nuit à partir de 68€</p>
+                                    <div class="hebergements-marseille-etoiles">
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </aside>
+            </section>
+            <!--FIN SECTION HEBERGEMENTS-->
+
+            <!-- DEBUT SECTION ACTIVITES-->
+            <section class="activites-marseille-section" id="activites">
+                <h2>Activités à Marseille</h2>
+                <div class="activites-marseille-div">
+                    <a href="#"  class="vieux-port">
+                        <figure>
+                            <img src="images/activites/3_medium/vieux-port.jpg" alt="vieux port de marseille avec bateaux"/>
+                            <figcaption>
+                                <h3>Vieux Port</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#"  class="fort-de-pomegues">
+                        <figure>
+                            <img src="images/activites/3_medium/fort-de-pomegues.jpg" alt="fort de Pomègues avec roche autour"/>
+                            <figcaption>
+                                <h3>Fort de Pomèges</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#"  class="iles-du-frioul">
+                        <figure>
+                            <img src="images/activites/3_medium/iles-du-frioul.jpg" alt="iles du frioul au loin avec longue vue en avant plan"/>
+                            <figcaption>
+                                <h3>Îles du Frioul</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#" class="parc-national-des-calanques">
+                        <figure>
+                            <img src="images/activites/3_medium/parc-national-des-calanques.jpg" alt="vue sur le parc national des calanques et la mer"/>
+                            <figcaption>
+                                <h3>Parc National des Calanques</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#" class="notre-dame-de-la-garde">
+                        <figure>
+                            <img src="images/activites/3_medium/notre-dame-de-la-garde.jpg" alt="vue au loin sur notre dame de la garde"/>
+                            <figcaption>
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+
+                    <a href="#" class="parc-longchamp">
+                        <figure>
+                            <img src="images/activites/3_medium/parc-longchamp.jpg" alt="vue sur l'entrée du parc de longhchamp"/>
+                            <figcaption>
+                                <h3>Parc Longchamp</h3>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <!--CLEAN LES DIVS !-->
+
+                    
+                </div>
+
+            </section>
+            <!-- FIN SECTION ACTIVITES-->
         </main>
         <!--FIN MAIN-->
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-sub-container">
+                    <h3>A propos</h3>
+                    <a class="footer-lien" href="#">Fonctionnement du site</a>
+                    <a class="footer-lien" href="#">Conditions générales de vente</a>
+                    <a class="footer-lien" href="#">Données et confidentialité</a>
+                </div>
 
+                <div class="footer-sub-container">
+                    <h3>Nos Hébergements</h3>
+                    <a class="footer-lien" href="#">Charte qualité</a>
+                    <a class="footer-lien" href="#">Soumettre votre hôtel</a> 
+                </div>
+
+                <div class="footer-sub-container">
+                    <h3>Assistance</h3>
+                    <a class="footer-lien" href="#">Centre d'aide</a>
+                    <a class="footer-lien" href="#">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
     </body>
     <!--FIN BODY-->
 </html>
