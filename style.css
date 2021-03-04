@@ -1,12 +1,17 @@
 body
 {
-    margin: 1rem auto;
+    padding: 1rem auto;
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
+    margin: 0;
 }
 main
 {
-    margin : 1rem;
+    
+}
+.title, .filtres-container, h1, h2, .afficher-plus, header, form, .activites-marseille-section
+{
+    margin: 1rem;
 }
 /*** ---------------------DEBUT STYLE HEADER--------------------- ***/
 .header
@@ -101,8 +106,8 @@ main
 /*** ---------------------FIN STYLE TITRE--------------------- ***/
 
 /*** ---------------------DEBUT STYLE CHAMP RECHERCHE--------------------- ***/
-    /* ICONE */
-form span
+/* ICONE */
+.map-search-icon
 {
     background-color: #f2f2f2;
     padding: 1rem 1.25rem;
@@ -118,20 +123,23 @@ form span
         border-bottom: #F2F2F2 1px solid;
         padding: 0 1.5rem;
         font-weight: bold;
-        height: 2.8rem;
+        height: 100%;
         font-size: 1rem;
+        padding-right: 1rem;
+        height: 3.1rem;
     }
+    
     /* BOUTON */
 #search-submit-button
 {
     border-radius: 0 1rem 1rem 0;
-    background-color: #0065FC;
     color: white;
     font-weight: bold;
     font-size: 1em;
     border: none;
-    padding : 0 1rem;
+    padding : 1.05rem;
     cursor: pointer;
+    background-color: #0065FC;
 }
 /*----------media queries----------*/
 @media screen and (max-width:600px)
@@ -149,7 +157,6 @@ form span
     .search-button-icon
     {
         color: white;
-        padding: 1rem;
         display: block;
     }
     .search-input
@@ -161,6 +168,12 @@ form span
 }
 @media screen and (min-width:601px)
 {
+    .formulaire form
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
     .search-button-icon
     {
         display: none!important;
@@ -174,7 +187,7 @@ form span
 /*** ---------------------FIN STYLE CHAMP RECHERCHE--------------------- ***/
 
 /*** ---------------------DEBUT STYLE FILTRES--------------------- ***/
-.filtre_annonce
+.filtre-annonce
 {
     font-weight: bold;
 }
@@ -195,7 +208,7 @@ form span
 .filtre p
 {
     padding-left: 5px;
-    font-weight: bold; /* Actif ? */
+    font-weight: bold;
 }
 .filtre-icon-background
 {
@@ -279,12 +292,16 @@ form span
         display: flex;
         flex-wrap: nowrap;
     }
+aside
+{
+    background-color: #F2F2F2;
+}
     
-.hebergements-populaires-etoiles[data-active=true], .hebergements-marseille-etoiles[data-active=true]
+.hebergements-populaires-etoiles-icon[data-active=true], .hebergements-marseille-etoiles-icon[data-active=true]
 {
     color: #0065FC;
 }
-.hebergements-populaires-etoiles[data-active=false], .hebergements-marseille-etoiles[data-active=false]
+.hebergements-populaires-etoiles-icon[data-active=false], .hebergements-marseille-etoiles-icon[data-active=false]
 {
     color: #F2F2F2;
 }
@@ -333,9 +350,9 @@ article:hover
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
 }
-aside article 
+aside article
 {
-    margin-right: 1em;
+    margin: 1rem;
 }
 
 /* Links style*/
@@ -345,7 +362,7 @@ aside article
     color: black;
 }
 /*Positionnement*/
-.hebergement-populaires-title
+.hebergements-populaires-title
     {
         display: flex;
         align-items: center;
@@ -359,7 +376,7 @@ aside article a
 }
 
 /*----------media queries----------*/
-@media screen and (max-width:949px)
+@media screen and (max-width:984px)
 {
     /*Positionnement*/
     .hebergements-section
@@ -429,7 +446,7 @@ aside article a
         width: 30%;
     }
 }
-@media screen and (min-width : 950px) and (max-width : 1349px)
+@media screen and (min-width : 985px) and (max-width : 1349px)
 {
     /*Positionnement*/
     .hebergements-section
@@ -664,6 +681,7 @@ aside article a
 /*** ---------------------FOOTER--------------------- ***/ 
 footer
 {
+    background-color: #F2F2F2;
     margin-top: 4rem;
 }
 .footer-container
