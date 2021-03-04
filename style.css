@@ -3,7 +3,7 @@ body
     padding: 1rem auto;
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
-    margin: 0;
+    margin: auto;
 }
 main
 {
@@ -379,6 +379,12 @@ aside article a
 @media screen and (max-width:984px)
 {
     /*Positionnement*/
+    .hebergements-populaires-title
+    {
+        justify-content: space-between;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
     .hebergements-section
     {
         display: flex;
