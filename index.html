@@ -15,7 +15,7 @@
     <!--DEBUT BODY-->
     <body>
         <!--DEBUT HEADER (logo, nav)-->
-        <header class="header">
+        <header>
             <img class="header-logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
             <nav class="header-nav">
                 <a class="header-nav-link" href="#hebergements" data-active="true">Hébergement</a>
@@ -36,7 +36,7 @@
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     <!--DEBUT FORMULAIRE DE RECHERCHE-->
-                    <div class="formulaire">
+                    <div class="form">
                         <form>
                             <span class="map-search-icon">
                                 <i class="fas fa-map-marker-alt "></i>
@@ -52,36 +52,36 @@
                 </div>
                 <!--FIN PREMIERE DIVISION (titre et champ de recherche)-->
 
-                <!---DEBUT DEUXIEME DIVISION (filtres)-->
-                <div class="filtres-container">
-                    <p class="filtre-annonce">Filtres</p>
+                <!---DEBUT DEUXIEME DIVISION (filters)-->
+                <div class="filters-container">
+                    <p class="filter-annonce">Filtres</p>
 
-                    <div class="filtre">
-                        <span class="filtre-icon-background">
-                            <i class="fas fa-money-bill-wave-alt filtre-icon"></i>
+                    <div class="filter">
+                        <span class="filter-icon-background">
+                            <i class="fas fa-money-bill-wave-alt filter-icon"></i>
                         </span>
                         <p>Économique</p>
                     </div>
-                    <div class="filtre">
-                        <span class="filtre-icon-background">
-                            <i class="fas fa-child filtre-icon"></i>
+                    <div class="filter">
+                        <span class="filter-icon-background">
+                            <i class="fas fa-child filter-icon"></i>
                             </span>
                         <p>Familial</p>
                     </div>
-                    <div class="filtre">
-                        <span class="filtre-icon-background">
-                            <i class="fas fa-heart filtre-icon"></i>
+                    <div class="filter">
+                        <span class="filter-icon-background">
+                            <i class="fas fa-heart filter-icon"></i>
                             </span>
                         <p>Romantique</p>
                     </div>
-                    <div class="filtre">
-                        <span class="filtre-icon-background">
-                            <i class="fas fa-dog filtre-icon"></i>
+                    <div class="filter">
+                        <span class="filter-icon-background">
+                            <i class="fas fa-dog filter-icon"></i>
                         </span>    
                         <p>Animaux autorisés</p>
                     </div>
                 </div>
-                <!---FIN DEUXIEME DIVISION (filtres)-->
+                <!---FIN DEUXIEME DIVISION (filters)-->
 
                 <!--DEBUT TROISIEME DIVISION (i, resutat de recherche)-->
                 <div class="search-result">
@@ -98,7 +98,7 @@
             <section class="hebergements-section" id="hebergements">
                 <div class="hebergements-marseille-container">
                     <h2 class="hebergements-marseille-title">Hébergements à Marseille</h2>
-                    <div class="hebergements-marseille-firstline">
+                    <div class="hebergements-marseille-article-container">
                         <article class="hebergements-marseille-auberge-cannebiere">
                             <a href="#">
                                 <figure class="hebergements-marseille-auberge-cannebiere-figure">
@@ -108,12 +108,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 25€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                 </div>
                             </a>
                         </article>
@@ -127,12 +127,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 52€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
                                 </div>
                             </a>
                         </article>
@@ -146,12 +146,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 75€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                 </div>
                             </a>
                         </article>
@@ -165,12 +165,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 46€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                 </div>
                             </a>
                         </article>
@@ -184,12 +184,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 23€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                 </div>
                             </a>
                         </article>
@@ -203,12 +203,12 @@
                                     </figcaption>
                                 </figure>
                                 <p>Nuit à partir de 96€</p>
-                                <div class="hebergements-marseille-etoiles">
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                    <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                <div class="hebergements-marseille-stars">
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                    <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
                                 </div>
                             </a>
                         </article>
@@ -231,12 +231,12 @@
                                 <div class="hebergements-populaires-aside-title-div">
                                     <h3>Hôtel Soleil du Matin</h3>
                                     <p>Nuit à partir de 128€</p>
-                                    <div class="hebergements-marseille-etoiles">
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
+                                    <div class="hebergements-marseille-stars">
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
                                     </div>
                                 </div>
                             </a>
@@ -250,12 +250,12 @@
                                 <div class="hebergements-populaires-aside-title-div">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                     <p>Nuit à partir de 71€</p>
-                                    <div class="hebergements-marseille-etoiles">
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                    <div class="hebergements-marseille-stars">
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                     </div>
                                 </div>
                             </a>
@@ -269,12 +269,12 @@
                                 <div class="hebergements-populaires-aside-title-div">
                                     <h3>Hôtel Tout Bleu et Blanc</h3>
                                     <p>Nuit à partir de 68€</p>
-                                    <div class="hebergements-marseille-etoiles">
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="true"></i>
-                                        <i class="fas fa-star hebergements-marseille-etoiles-icon" data-active="false"></i>
+                                    <div class="hebergements-marseille-stars">
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="true"></i>
+                                        <i class="fas fa-star hebergements-marseille-stars-icon" data-active="false"></i>
                                     </div>
                                 </div>
                             </a>
@@ -355,21 +355,21 @@
             <div class="footer-container">
                 <div class="footer-sub-container">
                     <h3>A propos</h3>
-                    <a class="footer-lien" href="#">Fonctionnement du site</a>
-                    <a class="footer-lien" href="#">Conditions générales de vente</a>
-                    <a class="footer-lien" href="#">Données et confidentialité</a>
+                    <a class="footer-link" href="#">Fonctionnement du site</a>
+                    <a class="footer-link" href="#">Conditions générales de vente</a>
+                    <a class="footer-link" href="#">Données et confidentialité</a>
                 </div>
 
                 <div class="footer-sub-container">
                     <h3>Nos Hébergements</h3>
-                    <a class="footer-lien" href="#">Charte qualité</a>
-                    <a class="footer-lien" href="#">Soumettre votre hôtel</a> 
+                    <a class="footer-link" href="#">Charte qualité</a>
+                    <a class="footer-link" href="#">Soumettre votre hôtel</a> 
                 </div>
 
                 <div class="footer-sub-container">
                     <h3>Assistance</h3>
-                    <a class="footer-lien" href="#">Centre d'aide</a>
-                    <a class="footer-lien" href="#">Nous contacter</a>
+                    <a class="footer-link" href="#">Centre d'aide</a>
+                    <a class="footer-link" href="#">Nous contacter</a>
                 </div>
             </div>
         </footer>
