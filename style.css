@@ -363,7 +363,6 @@ aside article a {
 @media screen and (min-width : 680px){ 
     .hebergements-marseille-article-container{
         display: flex;
-        align-items: ; 
         margin-top: 1rem;
         margin-bottom: 1rem;
         flex-wrap: wrap;
@@ -376,7 +375,7 @@ aside article a {
         margin-bottom: 1rem;
     }
     .hebergements-marseille-container article{
-    width: 30%;
+        width: 30%;
     }
 }
 @media screen and (min-width:1200px) and (max-width:1349px){
